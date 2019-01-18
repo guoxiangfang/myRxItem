@@ -3,10 +3,15 @@
 var indexApp = new Vue({
     el: '#wrapper',
     data:{
-        navName:'帮助中心',
-        navList:[
+        topList:[
             {
                 name:'帮助中心'
+            },
+            {
+                name:'登录'
+            },
+            {
+                name:'注册'
             }
         ]
     }
