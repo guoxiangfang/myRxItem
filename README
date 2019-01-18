@@ -1,0 +1,18 @@
+
+
+common.css 放所有页面公用的css（除header,footer）
+
+结构样式相同的部分，用相同结构，引用其对应less 文件
+
+每页类似于客户案例，成功案例，相关资讯等大标题文字样式在common.less，主要类名为title
+
+
+后续：
+客户案例可写同样的结构样式
+footer上面一部分  立即免费试用  已建立对应 freeUse.less 文件
+
+
+单位换算：
+字体采用rem为单位，其它使用px
+10px = 1rem
+例：设计图字体 24px = 2.4rem

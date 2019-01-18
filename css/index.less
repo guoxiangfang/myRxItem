@@ -1,39 +1,15 @@
 @import "./common/common";
 @import "./common/header";
 @import "./common/footer";
+@import "./common/banner";
+@import "./common/sectionAbout";
+@import "./common/successCase";
+@import "./common/linkNews";
 
-.title{
-  text-align: center;
-  font-size: 4.2rem;
-  line-height: 5rem;
-  color: @fontColor;
-  padding:60px;
-}
-.section-rotate{
-  .bg-gradient-primary{
-    width: 100%;
-    position: absolute;
-    top: -160px;
-    z-index: -2;
-  }
-  .banner-text{
-    h1{
-      font-size: 4.2rem;
-      line-height: 5rem;
-      margin-top: 8.33rem;
-    }
-    p{
-      font-size: 2.4rem;
-      line-height: 2.75rem;
-      margin: 1.33rem 0 2.5rem 0;
-    }
 
-  }
-  .banber-box{
-    margin-top: 4rem;
-  }
-}
 
+
+//服务
 .section-service{
   padding-top: 100px;
   padding-bottom: 70px;
@@ -48,101 +24,16 @@
   }
 }
 
-.about-sec{
-  padding: 40px 0;
-  .right-content-area{
-    position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
-    h1{
-      font-size: 2.8rem;
-      line-height: 3.3rem;
-      color: @fontColor;
-      margin-bottom: 1rem;
-    }
-    p{
-      font-size: 1.5rem;
-      color: #657180;
-      line-height: 2.6rem;
-    }
-  }
-}
 
 .section-info{
   background: url('../images/index/case-bg.png') center center/cover no-repeat;
   .card-top{
     margin-top: 100px;
   }
-  .case-card{
-    .card{
-      box-shadow:0px 0px 30px 0px rgba(0,0,0,0.08);
-      border: none;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      border-radius: 8px;
-      .card-body{
-        padding: 39px 50px 30px;
-        color: #657180;
-        .card-title{
-          width: 13.33rem;
-        }
-        .card-text{
-          font-size: 1.6rem;
-          line-height: 2.66rem;
-          min-height: 217px;
-        }
-        .case-name{
-          font-size: 2.4rem;
-          span{
-            margin-right: 1rem;
-          }
-        }
-        .case-job{
-          font-size: 1.6rem;
-          margin-top: 15px;
-        }
-      }
-    }
-    .card:hover{
-      box-shadow:0px 0px 30px 0px rgba(0,0,0,0.3);
-    }
-  }
 
-  .link-news{
-    //.img-wrapper{
-    //  width: 26.66rem;
-    //}
-    .row-pad{
-      padding: 70px 0;
-      border-bottom: 1px solid #E8EAEC;
-    }
-    .row-pad:last-child{
-      border-bottom: 1px solid transparent;
-    }
-    .new-explain{
-      position: relative;
-      top: 50%;
-      transform: translate(0, -50%);
-      h1{
-        font-size: 2.8rem;
-        line-height: 3.33rem;
-        color: @fontColor;
-        margin-bottom: 10px;
-      }
-      p{
-        color: #657180;
-        font-size: 1.6rem;
-        line-height: 2.66rem;
-      }
-      a{
-        color:#006DFF;
-        font-size: 1.6rem;
-        line-height: 2.33rem;
-      }
-    }
-  }
 }
 
+//申请使用
 .section-test{
   color: #fff;
   padding: 112px 0;
