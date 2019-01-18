@@ -1,49 +1,60 @@
 
-
-.header .navbar-top{
-  background: #2782fa;
-}
-.navbar-top {
-  position: relative;
-  z-index: 110;
-  display: flex;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  align-items: center;
-}
-.navbar-nav .nav-item {
-  margin-right: 2rem;
-}
-.navbar-top .navbar-nav .nav-link {
-  padding: .25rem .5rem;
-  .iconfont{
-    color: #fff;
+.header{
+  .navbar-top{
+    //background: #2782fa;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  font-size: 1.6rem;
-}
+  .navbar{
+    padding: 1.9rem 1rem;
+  }
+  .navbar-sticky.sticky{
+    position: fixed;
+    z-index: 1030;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    transform: translateY(100px);
+    border-top: 0;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 2rem;
+  }
+  .navbar-top .navbar-nav .nav-link {
+    padding: .25rem 0;
+    .iconfont{
+      color: @writeColor;
+    }
+  }
+  .navbar-top .navbar-nav .nav-link .iconfont{
+    color: @writeColor;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color:@writeColor;
+    font-size: 1.6rem;
+  }
 
-.btn-outline-success{
-  padding: 1rem 2.3rem;
-  font-size: 1.6rem;
-  color: #fff;
-  background-color: transparent;
-  background-image: none;
-  border-color: #fff;
-  outline: none;
-}
-.btn-outline-success:hover{
-  background: #fff;
-  color: #006dff;
-  border-color: #fff;
-}
-.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle{
-  color: #006dff;
-  background-color: #fff;
-  border-color: #fff;
-}
-.btn-outline-success.focus, .btn-outline-success:focus{
-  box-shadow: none;
+  .btn-outline-success{
+    padding: 1rem 2.3rem;
+    font-size: 1.6rem;
+    color: @writeColor;
+    background-color: transparent;
+    background-image: none;
+    border-color: @writeColor;
+    outline: none;
+  }
+  .btn-outline-success:hover{
+    background: @writeColor;
+    color: @mainColor;
+    border-color: @writeColor;
+  }
+  .btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle{
+    color:@mainColor;
+    background-color:@writeColor;
+    border-color: @writeColor;
+  }
+  .btn-outline-success.focus, .btn-outline-success:focus{
+    box-shadow: none;
+  }
 }

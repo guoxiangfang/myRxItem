@@ -1,0 +1,87 @@
+body,div,p,h1,h2,h3,h4,h5,h6,span,i,em,ul,li,ol,dl,dt,dd,input,select,option,a,textarea{
+  margin:0;
+  padding:0;
+  color:#333;
+}
+html{
+  font-size: 62.5%;
+  height: 100%
+}
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  color: #d2d3ff;
+  line-height: inherit;
+}
+input,select,textarea{
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow:none
+}
+select{
+  border: none;
+}
+textarea{
+  resize:none;
+}
+a{
+  text-decoration: none;
+}
+ul,li,ol,dl,dt,dd{
+  list-style: none;
+}
+input[required]:invalid, input:focus:invalid, textarea[required]:invalid, textarea:focus:invalid{
+  box-shadow: none;
+  -moz-box-shadow:none
+}
+.text-overflow { /* 超出省略号 */
+  display: block;
+  word-break:keep-all;/* 不换行 */
+  white-space:nowrap;/* 不换行 */
+  overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.clear_both:after{
+  clear: both;
+  content: '';
+  display: block;
+}
+
+@mainColor:#006DFF;
+@writeColor:#fff;
+@fontColor:#464C5B;
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+    padding: 0 24px;
+  }
+}
+
+.wrapper {
+  min-width: 320px;
+  overflow-x: hidden;
+  width: 100%;
+}
+.btn-group-lg>.btn, .btn-lg{
+  padding: 1rem 2.3rem;
+  font-size: 1.6rem;
+}
+.btn-write{
+  padding: 1rem 2.3rem;
+  font-size: 1.6rem;
+  background: #fff;
+  color: @mainColor;
+  font-weight: 500;
+}
