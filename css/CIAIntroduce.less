@@ -8,6 +8,11 @@
 //@import "./common/carousel";//客户案例轮播
 @import "./common/freeUse";
 
+.rounded-corners (@radius: 4px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
 .navbar-productMain{
   width: 100%;
   height: auto;
@@ -27,6 +32,7 @@
       width: 64px;
       font-size: 1.6rem;
       line-height: 58px;
+      text-align: center;
       color: @fontColor;
       padding: 0;
       margin: 0 auto;
@@ -61,7 +67,7 @@
   .productFeatures{
     .section-about{
       .row{
-        margin-bottom:180px;
+        padding: 90px 0;
       }
     }
   }
@@ -93,9 +99,7 @@
     height: 48px;
     font-size: 1.6rem;
     padding-top: 9px;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    border-radius: .5rem;
+    .rounded-corners;
   }
   .btn-primary{
     margin-right: 30px;
@@ -111,9 +115,7 @@
   li{
     width: 16px;
     height: 16px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
+    .rounded-corners(100%);
     background: rgba(0, 0, 0, 0.1);
     margin: 30px 0 0 20px;
   }
@@ -131,18 +133,107 @@
     img{
       border: 1px solid rgba(0,0,0,0.08);
       //box-shadow:0px 0px 10px 0px rgba(0,0,0,0.08);
-      border-radius:4px;
+      .rounded-corners;
     }
   }
 }
-.productFeatures .row{
-  padding: 90px 0;
- /* .img-fluid{
-    width: 85.5%;
+/*价格*/
+.versionFee{
+  margin: 90px 0 120px 0;
+  .versionFeeInfo{
+    border: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
+    text-align: center;
+    .rounded-corners;
+    h1{
+      font-size: 3.2rem;
+      color: @fontColor;
+      line-height: 60px;
+      padding: 40px 0;
+    }
+    h2{
+      font-size: 8rem;
+      color: @mainColor;
+      //line-height: 96px;
+      span{
+        display: block;
+        font-size: 2.8rem;
+        color: #657180;
+        line-height: 40px;
+      }
+    }
+    p{
+      margin: 40px 0 70px 0;
+      span{
+        display: block;
+        font-size: 1.6rem;
+        color: @fontColor;
+        line-height: 22px;
+        margin-bottom: 18px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+      }
+    }
   }
-  &:nth-child(even) .img-fluid{
-    margin-left: 14.5%;
-  }*/
+}
+/*对勾 样式*/
+.checkMark{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2D8CF0;
+  margin-right: 5px;
+}
+
+.versionInfoTable{
+  width: 100%;
+  border-collapse: separate;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 120px;
+  tr{
+    height: 48px;
+    border: 1px solid #DCDEE2;
+    th{
+      font-size: 1.6rem;
+      color: @fontColor;
+      font-weight:600;
+      &:first-child{
+        width: 24%;
+      }
+    }
+    th,td{
+      border: 1px solid #DCDEE2;
+    }
+    td{
+      width: 19%;
+      font-size: 1.6rem;
+      color: #657180;
+      font-weight:400;
+    }
+  }
+}
+/*常见问题及解答*/
+.commonProblemOrAnswer{
+  margin-bottom: 180px;
+  .problemOrAnswer{
+    div{
+      padding: 50px 0;
+      h2{
+        font-size: 2.4rem;
+        color: @fontColor;
+        line-height: 33px;
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 1.6rem;
+        color: #657180;
+        line-height: 22px;
+      }
+    }
+  }
+
 }
 
 
