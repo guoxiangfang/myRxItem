@@ -34,7 +34,48 @@
     color:@writeColor;
     font-size: 1.6rem;
   }
-
+  .dropdown-menu{
+    width: 480px;
+    .media{
+      .media-title{
+        min-width: 105px;
+        padding: 0 1.25rem;
+        border-right: 1px solid #E8EAEC;
+        h1{
+          font-family:PingFangSC-Regular;
+          color: @fontColor;
+          font-size: 2.4rem;
+          font-weight: 600;
+        }
+      }
+      .media-body{
+        padding: 0 1.25rem;
+        h6{
+          font-family:PingFangSC-Regular;
+          color: @fontColor;
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+      p{
+        font-size: 1.2rem;
+        line-height: 17px;
+        color: #9EA7B4;
+        font-family:PingFangSC-Regular;
+        margin-top: 8px;
+      }
+    }
+    .list-group-item{
+      border-color: #fff;
+      padding: 1.6rem 1.25rem;
+    }
+    .list-group-item-action:focus, .list-group-item-action:hover{
+      h1,h6{
+        color: #006DFF;
+      }
+      background-color: #F7F9FB;
+    }
+  }
 
 }
 .btn-outline-write{
