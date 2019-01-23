@@ -1,0 +1,165 @@
+@import "./common/common";
+@import "./common/header";
+@import "./common/footer";
+@import "./common/banner";
+@import "./common/sectionAbout";//左图右文
+@import "./common/linkNews";//相关资讯
+@import "./common/freeUse";
+@import "./common/tabBar";
+@import "./common/customerCase"; //客户案例
+@import "./common/sectionPrice"; //价格
+
+
+
+.navbar-iphone ul{
+  display: table;
+  width: 100%;
+  li{
+    display: table-cell;
+    width: 33.3%;
+    margin: 0;
+    text-align: center;
+  }
+}
+/*产品简介 功能介绍 价格*/
+.productContent{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .productInfo{
+    display: none;
+  }
+  .productFeatures{
+    .section-about{
+      background: url('../images/bg2.png') 0 350px no-repeat;
+      background-size: cover;
+      .row{
+        padding: 90px 0;
+      }
+      //功能介绍
+      .img-wrapper{
+        width: 40rem;
+      }
+    }
+  }
+}
+/*产品简介*/
+.CIAIntroduce{
+  .img-wrapper{
+    width: 26.66rem;
+  }
+}
+.section-info{
+  background: url('../images/index/case-bg.png');
+  background-size: cover;
+}
+
+.advantage{
+  padding-top: 50px;
+  h3{
+    font-size: 3.2rem;
+    color:@fontColor;
+    line-height: 3.75rem;
+  }
+  h2{
+    font-size: 8rem;
+    line-height: 8rem;
+    color: @mainColor;
+    margin: 40px 0;
+  }
+  p{
+    font-size: 2.8rem;
+    line-height: 3.33rem;
+    color: #657180;
+  }
+}
+
+.monitorType{
+  .card{
+    max-width: 16.67rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    border-color: #fff;
+    .card-body{
+      .card-title{
+        font-size: 2.8rem;
+        color: @fontColor;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+      .card-text{
+        font-size: 1.6rem;
+        color: #657180;
+        line-height: 2.67rem;
+      }
+    }
+  }
+}
+
+/*对勾 样式*/
+.checkMark{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2D8CF0;
+  margin-right:10px;
+}
+
+.versionInfoTable{
+  width: 100%;
+  border-collapse: separate;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 120px;
+  tr{
+    height: 48px;
+    border: 1px solid #DCDEE2;
+    th{
+      font-size: 1.6rem;
+      color: @fontColor;
+      font-weight:600;
+      &:first-child{
+        width: 24%;
+      }
+    }
+    th,td{
+      border: 1px solid #DCDEE2;
+    }
+    td{
+      width: 19%;
+      font-size: 1.6rem;
+      color: #657180;
+      font-weight:400;
+    }
+  }
+}
+
+/*常见问题及解答*/
+.commonProblemOrAnswer{
+  margin-bottom: 180px;
+  .problemOrAnswer{
+    .pacont{
+      box-shadow:0px 0px 30px 0px rgba(0,0,0,0.08);
+      padding: 50px 0 50px 60px;
+      margin-bottom: 40px;
+      h2{
+        font-size: 2.4rem;
+        color: @fontColor;
+        line-height: 33px;
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 1.6rem;
+        color: #657180;
+        line-height: 22px;
+      }
+    }
+    .pacont:hover{
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+}
+
+
+

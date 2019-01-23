@@ -5,45 +5,12 @@
 @import "./common/sectionAbout";//左图右文
 @import "./common/linkNews";//相关资讯
 @import "./common/freeUse";
+@import "./common/tabBar";
+@import "./common/customerCase"; //客户案例
+@import "./common/sectionPrice"; //价格
 
-.rounded-corners (@radius: 4px) {
-  border-radius: @radius;
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-}
-.navbar-productMain{
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  margin-top: 98px;
-}
-.navbar-productMain ul{
-  font-size: 0;
-  li{
-    display: inline-block;
-    margin-right: 60px;
-    &:last-child{
-      margin-right: 0;
-    }
-    .nav-link{
-      display: block;
-      width: 64px;
-      font-size: 1.6rem;
-      line-height: 58px;
-      text-align: center;
-      color: @fontColor;
-      padding: 0;
-      margin: 0 auto;
-      border-bottom: 2px solid rgba(0, 109, 255, 0);
-    }
-  }
-}
-.navbar-productMain .active{
-  .nav-link{
-    color: @mainColor;
-    border-bottom: 2px solid @mainColor;
-  }
-}
+
+
 .navbar-iphone ul{
   display: table;
   width: 100%;
@@ -64,124 +31,55 @@
   }
   .productFeatures{
     .section-about{
+      background: url('../images/bg2.png') 0 350px no-repeat;
+      background-size: cover;
       .row{
         padding: 90px 0;
+      }
+      /*功能介绍*/
+      .img-wrapper{
+        width: 40rem;
       }
     }
   }
 }
 /*产品简介*/
-.productInfoTxt{
+.CIAIntroduce{
+  .img-wrapper{
+    width: 26.66rem;
+  }
+}
+.section-info{
+  background: url('../images/index/case-bg.png');
+  background-size: cover;
+}
+
+.advantage{
+  padding-top: 50px;
+  h3{
+    font-size: 3.2rem;
+    color:@fontColor;
+    line-height: 3.75rem;
+  }
   h2{
-    font-size: 2.8rem;
-    font-weight:500;
-    color: @fontColor;
-    line-height: 40px;
+    font-size: 8rem;
+    line-height: 8rem;
+    color: @mainColor;
+    margin: 40px 0;
   }
   p{
-    font-size: 1.6rem;
-    font-weight:400;
+    font-size: 2.8rem;
+    line-height: 3.33rem;
     color: #657180;
-    line-height: 28px;
-    margin: 10px 0 36px 0;
   }
 }
 
-.productInfoBtn{
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  text-align: center;
-  .btn{
-    width: 120px;
-    height: 48px;
-    font-size: 1.6rem;
-    padding-top: 9px;
-    .rounded-corners;
-  }
-  .btn-primary{
-    margin-right: 30px;
-  }
-}
-/*客户案例*/
-.customerCaseCon{
-  margin: 343px 0 165px 0;
-  padding-bottom: 30px;
-}
-.carousel-indicators{
-  bottom: -30px;
-  li{
-    width: 16px;
-    height: 16px;
-    .rounded-corners(100%);
-    background: rgba(0, 0, 0, 0.1);
-    margin: 30px 0 0 20px;
-  }
-  &:last-child{
-    margin-right: 0;
-  }
-  .active{
-    background: @mainColor;
-  }
-}
-.carousel-inner{
-  overflow: initial;
-  .customerCaseImg{
-    margin-bottom: 30px;
-    img{
-      border: 1px solid rgba(0,0,0,0.08);
-      //box-shadow:0px 0px 10px 0px rgba(0,0,0,0.08);
-      .rounded-corners;
-    }
-  }
-}
-/*价格*/
-.versionFee{
-  margin: 90px 0 120px 0;
-  .versionFeeInfo{
-    border: 1px solid rgba(0,0,0,0.1);
-    background: #fff;
-    text-align: center;
-    .rounded-corners;
-    h1{
-      font-size: 3.2rem;
-      color: @fontColor;
-      line-height: 60px;
-      padding: 40px 0;
-    }
-    h2{
-      font-size: 8rem;
-      color: @mainColor;
-      //line-height: 96px;
-      span{
-        display: block;
-        font-size: 2.8rem;
-        color: #657180;
-        line-height: 40px;
-      }
-    }
-    p{
-      margin: 40px 0 70px 0;
-      span{
-        display: block;
-        font-size: 1.6rem;
-        color: @fontColor;
-        line-height: 22px;
-        margin-bottom: 18px;
-        &:last-child{
-          margin-bottom: 0;
-        }
-
-      }
-    }
-  }
-}
 /*对勾 样式*/
 .checkMark{
   font-size: 1.6rem;
   font-weight: bold;
   color: #2D8CF0;
-  margin-right: 5px;
+  margin-right:10px;
 }
 
 .versionInfoTable{
@@ -212,12 +110,15 @@
     }
   }
 }
+
 /*常见问题及解答*/
 .commonProblemOrAnswer{
   margin-bottom: 180px;
   .problemOrAnswer{
-    div{
-      padding: 50px 0;
+    .pacont{
+      box-shadow:0px 0px 30px 0px rgba(0,0,0,0.08);
+      padding: 50px 0 50px 60px;
+      margin-bottom: 40px;
       h2{
         font-size: 2.4rem;
         color: @fontColor;
@@ -229,6 +130,9 @@
         color: #657180;
         line-height: 22px;
       }
+    }
+    .pacont:hover{
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
     }
   }
 

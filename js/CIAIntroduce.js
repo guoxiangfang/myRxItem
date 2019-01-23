@@ -1,22 +1,26 @@
-$(function(){
-    navbarIphoneFun();
-    window.onresize = function(){
-        navbarIphoneFun();
-    };
-    $(".navbar-productMain ul li").on("click",function(){
-        var index=$(this).index();
-        $(this).addClass("active").siblings().removeClass("active");
-        $(".productContent .productInfo").eq(index).show().siblings().hide();
-    });
-    $('#myCarousel').carousel({
-        interval: 3000
-    });
+
+
+var CIAIntroduceApp = new Vue({
+    el: '#wrapper',
+    data:{
+        num: '0',
+        tabList:[
+            {
+                name:'产品简介'
+            },
+            {
+                name:'功能介绍'
+            },
+            {
+                name:'价格'
+            }
+        ]
+    },
+    method:{
+        tabChange:function (index) {
+            this.num = index;
+        }
+    }
+
 });
 
-function navbarIphoneFun() {
-    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        $(".navbar-productMain").addClass("navbar-iphone");
-    } else {
-        $(".navbar-productMain").removeClass("navbar-iphone");
-    }
-}

@@ -6,17 +6,21 @@
     padding-bottom: 1.5rem;
   }
   .navbar{
-    padding: 1.9rem 1rem;
+    padding: 1.1rem 1rem;
   }
   .navbar-sticky.sticky{
     position: fixed;
     z-index: 1030;
-    top: -100px;
+    top: -80px;
     left: 0;
     width: 100%;
     transition: all .2s ease-in-out;
-    transform: translateY(100px);
+    transform: translateY(80px);
     border-top: 0;
+    background: -webkit-linear-gradient(left, #24c1ff , #1392ff,#015fff); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left, #24c1ff , #1392ff,#015fff); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, #24c1ff , #1392ff,#015fff); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #24c1ff , #1392ff,#015fff); /* 标准的语法（必须放在最后） */
   }
   .navbar-nav .nav-item {
     margin-left: 2rem;
@@ -27,7 +31,7 @@
       color: @writeColor;
     }
   }
-  .navbar-top .navbar-nav .nav-link .iconfont{
+  .navbar .nav-link .iconfont{
     color: @writeColor;
   }
   .navbar-dark .navbar-nav .nav-link {
@@ -35,7 +39,7 @@
     font-size: 1.6rem;
   }
   .dropdown-menu{
-    width: 480px;
+    width: 40rem;
     .media{
       .media-title{
         min-width: 105px;

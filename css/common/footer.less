@@ -1,6 +1,90 @@
 
-
+@footColor: rgba(255, 255, 255, 0.5);
 .footer{
   background: #2E374D;
   padding: 54px 0;
+  .logo-box{
+    li{
+      float: left;
+    }
+    .group-img{
+      margin:40px 0;
+      overflow: hidden;
+      li{
+        width: 32px;
+        margin-right: 16px;
+      }
+    }
+  }
+  .group-flag{
+    li{
+      margin-right: 8px;
+    }
+  }
+  .footer-nav{
+    margin-bottom: 40px;
+    h6{
+      color: #fff;
+      font-size: 1.8rem;
+    }
+    .list-unstyled{
+      li{
+        a{
+          font-size: 1.4rem;
+          line-height: 32px;
+          color: @footColor;
+        }
+      }
+    }
+  }
+
+  .friend-link{
+    margin-top: 100px;
+    span{
+      color: @footColor;
+    }
+    a{
+      margin-left:16px;
+      color: @footColor;
+    }
+  }
+  .rights{
+    color: @footColor;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px){
+  .group-phone-img{
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .logo-box{
+    margin-bottom: 40px;
+    .group-img{
+      display: none;
+    }
+    .group-flag{
+      float: right;
+      margin-top: 16px;
+    }
+  }
+
+  .group-phone-img{
+    width: 200px;
+    display: block;
+    margin-bottom:20px;
+    overflow: hidden;
+    li{
+      width: 32px;
+      margin-right: 16px;
+      float: left;
+    }
+  }
+  .friend-link{
+    display: none;
+  }
+  .rights{
+    text-align: center;
+  }
 }
